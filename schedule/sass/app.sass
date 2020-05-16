@@ -1,0 +1,638 @@
+$primary-text-color: #424242
+$secondary-text-color: #757575
+$light-primary-color: #d1c4e9
+$default-primary-color: #673ab7
+
+*
+  margin: 0
+  padding: 0
+
+html
+  scroll-behavior: smooth
+  box-sizing: border-box
+  body
+    // font-family: 'Roboto', sans-serif
+
+a
+  text-decoration: none
+
+.container
+  width: 100%
+  max-width: 1280px
+  margin: auto
+
+.schedule-header-container
+  padding: 80px 32px 32px
+  h1
+    font-size: 40px
+    color: #424242
+    font-weight: 400
+    margin: 30px 0
+
+.dates
+  width: auto
+  padding: 0 36px
+  a
+    font-weight: 500
+    margin: 0 20px
+    .date-link.active
+      padding: 16px
+      color: $primary-text-color
+      border-bottom: 2px solid #673AB7
+      width: auto
+      display: inline-block
+    .date-link
+      padding: 16px
+      color: $secondary-text-color
+      width: auto
+      display: inline-block
+
+.filter-section
+  border-top: 1px solid #e2e2e2
+  border-bottom: 1px solid #e2e2e2
+
+.filter-container
+  padding: 16px 32px
+  text-align: right
+
+button.filter-btn
+  font-family: inherit
+  border: none
+  background: transparent
+  font-size: inherit
+  cursor: pointer
+  transition: .4s ease-in-out
+  color: $default-primary-color
+  padding: 10px
+  &:hover
+    background: #f5f5f5
+  &:focus
+    outline: none
+
+.lines
+  display: inline-block
+  width: 15px
+  margin-left: 5px
+
+.first
+  width: 100%
+  margin: auto
+  height: 2px
+  background-color: #673AB7
+  margin-top: 2px
+  -webkit-animation: init .4s ease-in-out
+  animation: init .4s ease-in-out
+
+.second
+  width: 60%
+  margin: auto
+  height: 2px
+  background-color: #673AB7
+  margin-top: 2px
+  -webkit-animation: init2 .4s ease-in-out
+  animation: init2 .4s ease-in-out
+
+.third
+  width: 30%
+  margin: auto
+  height: 2px
+  background-color: #673AB7
+  margin-top: 2px
+  transition: .4s ease-in-out
+
+button.filter-btn.close
+  .first
+    margin-top: -6px
+    transform: rotate(45deg)
+    -webkit-animation: rotate .4s ease-in-out
+    animation: rotate .4s ease-in-out
+  .second
+    transform: rotate(-45deg)
+    -webkit-animation: rotate2 .4s ease-in-out
+    animation: rotate2 .4s ease-in-out
+    margin: 0
+    margin-top: -2px
+    width: 100%
+  .third
+    display: none
+
+@-webkit-keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(45deg)
+
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(45deg)
+
+@-webkit-keyframes rotate2
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-45deg)
+
+@keyframes rotate2
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-45deg)
+
+@-webkit-keyframes init
+  from
+    transform: rotate(45deg)
+  to
+    transform: rotate(0deg)
+
+@keyframes init
+  from
+    transform: rotate(45deg)
+  to
+    transform: rotate(0deg)
+
+@-webkit-keyframes init2
+  from
+    transform: rotate(-45deg)
+  to
+    transform: rotate(0deg)
+
+@keyframes init2
+  from
+    transform: rotate(-45deg)
+  to
+    transform: rotate(0deg)
+
+.tracks-levels
+  display: none
+  -webkit-box-shadow: 0px 2px 1px -1px
+  -moz-box-shadow: 0px 2px 1px -1px
+  box-shadow: 0px 2px 1px -1px
+  background: #fff
+
+.tracks-levels.show
+  display: block
+
+.content-container
+  padding: 32px
+
+.tags
+  margin-bottom: 24px
+
+p.head
+  font-size: 20px
+
+button.round-btn
+  padding: 5px 10px
+  background: #fff
+  border-radius: 25px
+  font-family: inherit
+  font-size: inherit
+  margin-right: 10px
+  margin-top: 15px
+  cursor: pointer
+  &:focus
+    outline: none
+
+button.round-btn.android
+  color: #78c257
+  border: 1px solid #78c257
+
+button.round-btn.cloud
+  color: #3f51b5
+  border: 1px solid #3f51b5
+
+button.round-btn.web
+  color: #2196f3
+  border: 1px solid #2196f3
+
+button.round-btn.level
+  color: $primary-text-color
+  border: 1px solid $primary-text-color
+
+.time-change
+  padding: 32px
+
+.time-flex
+  display: flex
+  justify-content: space-between
+  margin-bottom: 32px
+  flex-wrap: wrap
+
+.hour
+  width: 6%
+  color: #757575
+
+p.hr
+  display: inline-block
+  font-size: 32px
+  font-weight: 300
+
+p.sec
+  display: inline-block
+
+.description
+  width: 95%
+  padding: 20px
+  border: 1px solid #e2e2e2
+  border-radius: 5px
+  cursor: pointer
+  &:hover
+    background-color: #f7f7f7
+
+p.drop
+  color: #424242
+  font-size: 20px
+
+p.topic
+  color: #424242
+  margin-top: 8px
+
+p.duration
+  font-size: 12px
+  margin-top: 16px
+
+.add-icon
+  text-align: right
+  padding-bottom: 40px
+
+.flex
+  display: flex
+  justify-content: space-between
+
+.language-container
+  font-size: 12px
+  color: #757575
+
+.grid
+  display: inline-grid
+  grid-template-columns: 54px 1fr 1fr 1fr
+  width: 100%
+  grid-column-gap: 16px
+  grid-row-gap: 32px
+  grid-template-rows: 290px 310px 340px
+
+.brown
+  padding: 20px
+  border: 1px solid #e2e2e2
+  border-radius: 5px
+  cursor: pointer
+  &:hover
+    background-color: #f7f7f7
+
+.complex
+  font-size: 12px
+
+.flex.top
+  margin-top: 10px
+  padding-bottom: 40px
+
+.flex.skill
+  padding-top: 16px
+
+button.round-btn.sm
+  font-size: 12px
+
+.pic
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background-color: $light-primary-color
+  display: inline-block
+
+.label
+  display: inline-block
+  margin-left: 8px
+
+p.name
+  font-size: 14px
+
+p.location
+  font-size: 12px
+
+.brown.one
+  grid-row: 1
+  grid-column: 2
+
+.brown.two
+  grid-row: 2
+  grid-column: 2
+
+.brown.three
+  grid-row: 1 / 3
+  grid-column: 3
+
+.brown.four
+  grid-row: 1 / 5
+  grid-column: 4
+
+.flex.top.height
+  height: 300px
+
+.flex.top.large
+  height: 990px
+
+.hour-mark
+  color: #757575
+  width: 100%
+
+.hour-mark.two
+  grid-row: 3
+  grid-column: 1
+
+.hour-mark.three
+  grid-row: 4
+  grid-column: 1
+
+.hour-mark.four
+  grid-row: 5
+  grid-column: 1
+
+.hour-mark.five
+  grid-row: 6
+  grid-column: 1
+
+.hour-mark.six
+  grid-row: 7
+  grid-column: 1
+
+.brown.five
+  grid-row: 3
+  grid-column: 2
+
+.brown.six
+  grid-row: 3
+  grid-column: 3
+
+.brown.seven
+  grid-row: 4
+  grid-column: 2 / 4
+
+.brown.eight
+  grid-row: 5
+  grid-column: 2
+
+.brown.nine
+  grid-row: 5
+  grid-column: 3
+
+.brown.ten
+  grid-row: 5 / 7
+  grid-column: 4
+
+.brown.eleven
+  grid-row: 6
+  grid-column: 2
+
+.brown.twelve
+  grid-row: 6
+  grid-column: 3
+
+.brown.thirteen
+  grid-row: 7
+  grid-column: 2 / 5
+
+.flex.top.hands
+  height: 60px
+
+.speaker.space
+  margin-bottom: 10px
+
+.flex.top.swift
+  height: 180px
+
+.flex.top.plan
+  height: 520px
+
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+  place-items: center
+
+.modal-content
+  width: 60%
+  display: flex
+
+
+.cont
+  width: 95%
+  // height: 80%
+  // max-height: 400px
+  // margin-bottom: -20px
+
+.top-header
+  width: 100%
+  // position: fixed
+
+.top-header-content
+  margin: 0 68px
+  padding: 24px
+
+.talks
+  font-size: 30px
+  font-weight: 400
+  color: $primary-text-color
+
+.top-header
+  background-color: #f7f7f7
+  padding-top: 80px
+
+.remove
+  width: 20px
+  height: 20px
+  cursor: pointer
+  margin-top: 20px
+  margin-left: 10px
+
+.left,
+.right
+  height: 2px
+  width: 100%
+  background-color: #fff
+
+.left
+  transform: rotate(-45deg)
+
+.right
+  transform: rotate(45deg)
+  margin-top: -2px
+
+.temp
+  background-color: #fff
+  overflow-y: scroll
+  max-height: 200px
+
+
+.spin
+  margin: 0 60px
+  padding: 24px
+
+p.small-headers
+  font-size: 18px
+  line-height: 1.5
+
+p.badge
+  margin: 30px 0 60px
+
+.red
+  background-color: #e64a19
+  height: 56px
+  width: 56px
+  border-radius: 50%
+  // position: absolute
+  // right: 360px
+  // top: 280px
+  border: transparent
+  // display: grid
+  margin-top: -30px
+  margin-left: 650px
+  position: fixed
+  place-items: center
+
+.sticky
+  position: fixed
+  top: 0
+  width: 100%
+  background-color: #fff
+  transition: .4s ease-in-out
+
+@media (max-width: 768px)
+  .hour
+    width: 100%
+    padding-left: 24px
+
+  .description
+    width: 100%
+    border-radius: 0
+    border-left: none
+    border-right: none
+
+  .grid
+    grid-row-gap: 0
+    grid-template-rows: 60px
+
+  .brown
+    border-radius: 0
+    border-left: none
+    border-right: none
+
+  .time-change
+    padding: 24px 0
+
+  .hour-mark
+    grid-row: 1
+    grid-column: 1 / 5
+    padding-left: 24px
+
+  .brown.one
+    grid-row: 2
+    grid-column: 1 / 5
+
+  .brown.two
+    grid-row: 3
+    grid-column: 1 / 5
+
+  .brown.three
+    grid-row: 4
+    grid-column: 1 / 5
+
+  .brown.four
+    grid-row: 5
+    grid-column: 1 / 5
+
+  .hour-mark.two
+    grid-row: 6
+    grid-column: 1 / 5
+    padding: 24px
+
+  .brown.five
+    grid-row: 7
+    grid-column: 1 / 5
+
+  .brown.six
+    grid-row: 8
+    grid-column: 1 / 5
+
+  .hour-mark.three
+    grid-row: 9
+    grid-column: 1 / 5
+    padding: 24px
+
+  .brown.seven
+    grid-row: 10
+    grid-column: 1 / 5
+
+  .hour-mark.four
+    grid-row: 11
+    grid-column: 1 / 5
+    padding: 24px
+
+  .brown.eight
+    grid-row: 12
+    grid-column: 1 / 5
+
+  .brown.nine
+    grid-row: 13
+    grid-column: 1 / 5
+
+  .brown.ten
+    grid-row: 14
+    grid-column: 1 / 5
+
+  .hour-mark.five
+    grid-row: 15
+    grid-column: 1 / 5
+    padding: 24px
+
+  .brown.eleven
+    grid-row: 16
+    grid-column: 1 / 5
+
+  .brown.twelve
+    grid-row: 17
+    grid-column: 1 / 5
+
+  .hour-mark.six
+    grid-row: 18
+    grid-column: 1 / 5
+    padding: 24px
+
+  .brown.thirteen
+    grid-row: 19
+    grid-column: 1 / 5
+
+  .flex.top.plan,
+  .flex.top.swift,
+  .flex.top.hands,
+  .flex.top.height,
+  .flex.top.large
+    height: auto
+
+  .brown.two,
+  .brown.three,
+  .brown.four,
+  .brown.six,
+  .brown.nine,
+  .brown.ten
+    border-top: none
+
+  .speaker
+    display: flex
+
+  .top-header-content
+    margin: 0
+
+  .spin
+    margin: 0
+
+  .dates
+    padding: 0

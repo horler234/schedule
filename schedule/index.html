@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="css/app.css">
+ <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+ <link rel="stylesheet" href="css/app.css">
+ <title>Schedule</title>
+</head>
+
+<body>
+  <section class="schedule-container">
+    <div class="container">
+      <div class="schedule-header-container">
+        <h1>Schedule</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="date-cate" id="stick">
+    <div class="container">
+      <div class="dates">
+        <a href="#">
+          <div class="date-link active">
+            September 9
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="date-link">
+            September 10
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="date-link">
+            September 11
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="date-link">
+            September 12
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-container">
+        <button class="filter-btn" id="filter-drop" onclick="dropDown()">
+          FILTERS
+          <div class="lines">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="tracks-levels" id="tags">
+    <div class="container">
+      <div class="content-container">
+        <div class="tags">
+          <p class="head">Tags</p>
+          <button class="round-btn android">Android</button>
+          <button class="round-btn cloud">Cloud</button>
+          <button class="round-btn web">Web</button>
+        </div>
+
+        <div class="tags">
+          <p class="head">Complexity</p>
+          <button class="round-btn level">Beginner</button>
+          <button class="round-btn level">Intermediate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="time-schedule">
+    <div class="container">
+      <div class="time-change">
+        <div class="time-flex">
+          <div class="hour">
+            <p class="hr">09</p>
+            <p class="sec">00</p>
+          </div>
+
+          <div class="description" id="coffee">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Registration & morning Coffee</p>
+                <p class="topic">Get your badge, coffee, enjoy talking with tech edicts around</p>
+              </div>
+
+              <div class="language-container"></div>
+            </div>
+
+            <div class="add-icon">
+              <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+            </div>
+            <p class="duration">1 hour</p>
+          </div>
+
+        </div>
+
+        <div class="time-flex">
+          <div class="hour">
+            <p class="hr">10</p>
+            <p class="sec">00</p>
+          </div>
+
+          <div class="description">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">GDG DevFest Ukraine 2016 Opening</p>
+                <p class="topic">Official start of the conference. Greetings from the organizers, sponsors and partners.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="add-icon">
+              <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+            </div>
+            <p class="duration">15 mins</p>
+          </div>
+
+        </div>
+
+        <div class="time-flex">
+          <div class="hour">
+            <p class="hr">10</p>
+            <p class="sec">15</p>
+          </div>
+
+          <div class="description">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Keynote</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="add-icon">
+              <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+            </div>
+            <p class="duration">15 mins</p>
+          </div>
+
+        </div>
+
+        <div class="grid">
+          <div class="hour-mark">
+            <p class="hr">11</p>
+            <p class="sec">00</p>
+          </div>
+
+          <div class="brown one">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Knock Knock! Who's there? Doze.</p>
+                <p class="topic">Doze mode is just around the corner.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">20 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Yonatan Levin</p>
+                <p class="location">Gett / Tel Aviv, Israel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown two">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Building web apps in 2016</p>
+                <p class="topic">Last year brought a lot of new capabilities to browsers, fundamentally changing the way we will build web apps in 2016. 60FPS, pus...</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">20 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn web sm">Web</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Konrad Dzwinel</p>
+                <p class="location">Brainly / Krakow, Poland</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown three">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Progressive web apps - prepare your web for 2017</p>
+                <p class="topic">"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same...</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top height">
+              <div class="complex">
+                Beginner
+              </div>
+
+              <div class="ico">
+                <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn web sm">Web</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Jana Moudra</p>
+                <p class="location">Juicymo / Prague, Czech Republic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown four">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">How much money Firebase can save you</p>
+                <p class="topic">TBD</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top large">
+              <div class="complex">
+                Beginner
+              </div>
+
+              <div class="ico">
+                <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">3 hours</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn cloud sm">Cloud</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Josef Vodicka</p>
+                <p class="location">Google / Prague, Czech Republic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hour-mark two">
+            <p class="hr">11</p>
+            <p class="sec">50</p>
+          </div>
+
+          <div class="brown five">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Accessibility on Android</p>
+                <p class="topic">Accessibility is a very important step to make sure that your app reaches everyone in an easy and fun way to use.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top hands">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Constantine Mars</p>
+                <p class="location">DataArt / Dnipro, Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown six">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">On Polymer and smileys... or Polysmileys</p>
+                <p class="topic">One of my favourite things about the web are ASCII smileys. They're sweet, fun and simply make the web a better place. How...</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top">
+              <div class="complex">
+                Beginner
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn web sm">Web</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Aleksandar Piotrowski</p>
+                <p class="location">Applause / Warsaw, Poland</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hour-mark three">
+            <p class="hr">12</p>
+            <p class="sec">30</p>
+          </div>
+
+          <div class="brown seven">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Lunch</p>
+                <p class="topic">Foooooooood!</p>
+              </div>
+            </div>
+
+            <div class="flex top">
+              <div class="complex">
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">1 hour 30 mins</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hour-mark four">
+            <p class="hr">14</p>
+            <p class="sec">00</p>
+          </div>
+
+          <div class="brown eight">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Windows and .NET on Google Cloud Platform</p>
+                <p class="topic">In this session, we will take a look at Windows and .NET support on Google Cloud Platform. We will build a simple...</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top hands">
+              <div class="complex">
+                Beginner
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn cloud sm">Cloud</button>
+              </div>
+            </div>
+
+            <div class="speaker space">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Mete Atamel</p>
+                <p class="location">Google / Mete is a Developer Advocate at Google</p>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Adrina Kajda</p>
+                <p class="location">Sygic / Creator of Fuelio app. Fuelio blah blah, Poland</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown nine">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Kotlin + Android</p>
+                <p class="topic">TBD</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top swift">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Sergii Khomenko</p>
+                <p class="location">Stylight / Munich, Germany</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown ten">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Accessibility on Android</p>
+                <p class="topic">Accessibility is a very important step to make sure that your app reaches everyone in an easy and fun way to use.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top plan">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Constantine Mars</p>
+                <p class="location">DataArt / Dnipro, Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hour-mark five">
+            <p class="hr">14</p>
+            <p class="sec">50</p>
+          </div>
+
+          <div class="brown eleven">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Accessibility </p>
+                <p class="topic">Accessibility is a very important step to make sure that your app reaches everyone in an easy and fun way to use.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top hands">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Constantine Mars</p>
+                <p class="location">DataArt / Dnipro, Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="brown twelve">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Accessibility </p>
+                <p class="topic">Accessibility is a very important step to make sure that your app reaches everyone in an easy and fun way to use.</p>
+              </div>
+
+              <div class="language-container">EN</div>
+            </div>
+
+            <div class="flex top hands">
+              <div class="complex">
+                Intermediate
+              </div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">40 mins</p>
+              </div>
+
+              <div class="btn-container">
+                <button class="round-btn android sm">Android</button>
+              </div>
+            </div>
+
+            <div class="speaker">
+              <div class="pic"></div>
+              <div class="label">
+                <p class="name">Constantine Mars</p>
+                <p class="location">DataArt / Dnipro, Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hour-mark six">
+            <p class="hr">14</p>
+            <p class="sec">50</p>
+          </div>
+
+          <div class="brown thirteen">
+            <div class="flex">
+              <div class="drop-container">
+                <p class="drop">Coffee break</p>
+                <p class="topic">Coffeeeeeee!</p>
+              </div>
+            </div>
+
+            <div class="flex top hands">
+              <div class="complex"></div>
+
+              <div class="ico">
+                  <a href="#"><img src="https://img.icons8.com/metro/24/424242/overtime.png"/></a>
+              </div>
+            </div>
+
+            <div class="flex skill">
+              <div class="duration-container">
+                <p class="duration">30 mins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal-pop">
+    <div class="modal-content">
+      <div class="cont">
+        <div class="top-header">
+          <div class="top-header-content">
+            <h2 class="talks">Registration & morning Coffee</h2>
+          </div>
+        </div>
+
+        <div class="temp">
+          <button class="red">
+            <a class="red-link"href="#">
+              <img src="https://img.icons8.com/metro/24/ffffff/overtime.png"/>
+            </a>
+          </button>
+          <div class="spin">
+            <p class="small-headers">September 9, 09:00 - 10:00</p>
+            <p class="small-headers">Expo Hall</p>
+            <p class="badge">Get your badge, coffee, enjoy talking with tech edicts around</p>
+            <p class="small-headers">Review Session</p>
+            <p class="small">Session reviews are not open</p>
+          </div>
+        </div>
+      </div>
+      <div class="remove" id="disappear">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="code.js" charset="utf-8"></script>
+</body>
+
+</html>
